@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MonitoringManager_PROD.Definitions.Notifications" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MonitoringManager_PROD.Definitions.Notifications" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://notify.ad/notify.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MonitoringManager_PROD.Definitions.Dictionaries" />
+  <xs:import schemaLocation="http://notify.ad/notify.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+  <xs:complexType name="ErrorDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:NotificationDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StackTrace" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ErrorDTO" nillable="true" type="tns:ErrorDTO" />
+  <xs:complexType name="NotificationDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/MonitoringManager_PROD.Definitions.Dictionaries" minOccurs="0" name="Endpoint" nillable="true" type="q1:DictionaryItemDTO" />
+      <xs:element minOccurs="0" name="Ghost" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="InfoPK" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="KeyValue" nillable="true" type="q2:ArrayOfKeyValuePairOfstringstring" />
+      <xs:element minOccurs="0" name="OccuranceDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SourceIP" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/MonitoringManager_PROD.Definitions.Dictionaries" minOccurs="0" name="System" nillable="true" type="q3:DictionaryItemDTO" />
+      <xs:element minOccurs="0" name="User" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NotificationDTO" nillable="true" type="tns:NotificationDTO" />
+  <xs:complexType name="MsgLogDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:NotificationDTO">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MsgLogDTO" nillable="true" type="tns:MsgLogDTO" />
+  <xs:complexType name="NotificationListsDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Errors" nillable="true" type="tns:ArrayOfErrorDTO" />
+      <xs:element minOccurs="0" name="Msgs" nillable="true" type="tns:ArrayOfMsgLogDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NotificationListsDTO" nillable="true" type="tns:NotificationListsDTO" />
+  <xs:complexType name="ArrayOfErrorDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ErrorDTO" nillable="true" type="tns:ErrorDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfErrorDTO" nillable="true" type="tns:ArrayOfErrorDTO" />
+  <xs:complexType name="ArrayOfMsgLogDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MsgLogDTO" nillable="true" type="tns:MsgLogDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMsgLogDTO" nillable="true" type="tns:ArrayOfMsgLogDTO" />
+</xs:schema>

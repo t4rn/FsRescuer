@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MonitoringManager_PROD.Definitions.Enums" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MonitoringManager_PROD.Definitions.Enums" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="ErrorCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BrakBledu" />
+      <xs:enumeration value="A01_BladAutentykacji" />
+      <xs:enumeration value="A02_BladAutoryzacji" />
+      <xs:enumeration value="A03_Exception" />
+      <xs:enumeration value="A04_BledneParametryWejsciowe" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ErrorCode" nillable="true" type="tns:ErrorCode" />
+</xs:schema>

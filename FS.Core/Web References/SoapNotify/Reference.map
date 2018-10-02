@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://notify.ad/notify.svc?disco" filename="NotificationManager.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://notify.ad/notify.svc?xsd=xsd2" filename="NotificationManager.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://notify.ad/notify.svc?xsd=xsd4" filename="NotificationManager0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://notify.ad/notify.svc?xsd=xsd1" filename="NotificationManager1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://notify.ad/notify.svc?wsdl" filename="NotificationManager.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://notify.ad/notify.svc?xsd=xsd6" filename="NotificationManager2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://notify.ad/notify.svc?xsd=xsd3" filename="NotificationManager3.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://notify.ad/notify.svc?xsd=xsd5" filename="NotificationManager4.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://notify.ad/notify.svc?xsd=xsd7" filename="NotificationManager5.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://notify.ad/notify.svc?xsd=xsd0" filename="NotificationManager6.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

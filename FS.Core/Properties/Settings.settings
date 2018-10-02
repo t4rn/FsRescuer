@@ -1,0 +1,31 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FS.Core.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Server=10.0.0.20;Port=5432;Database=fs_db; User Id=fs_user;Password=fs_passwd;Pooling=false&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Server=10.0.0.20;Port=5432;Database=fs_db; User Id=fs_user;Password=fs_passwd;Pooling=false</Value>
+    </Setting>
+    <Setting Name="LocalAppDir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\_applications</Value>
+    </Setting>
+    <Setting Name="MainFs" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\company.ad\applications</Value>
+    </Setting>
+    <Setting Name="NewFs" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\new.ad\applications</Value>
+    </Setting>
+    <Setting Name="NotifyName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FsRescuer</Value>
+    </Setting>
+    <Setting Name="FS_Core_SoapNotify_NotificationManager" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://notify.ad/notify.svc</Value>
+    </Setting>
+    <Setting Name="OldFs" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\old.ad\applications</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
